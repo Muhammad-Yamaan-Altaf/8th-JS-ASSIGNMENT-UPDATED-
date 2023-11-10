@@ -1,0 +1,15 @@
+<!-- Q.2 -->
+<img src="./pics/mobile1.jpg" class="mobile-image" id="mobile1">
+<img src="./pics/mobile2.jpg" class="mobile-image" id="mobile2">
+<img src="./pics/mobile3.jpg" class="mobile-image" id="mobile3">
+<br><br>
+<script >
+    var mobileImages = document.querySelectorAll('.mobile-image');
+        mobileImages.forEach(function(image) {
+            image.addEventListener('click', function() {
+                var mobileId = image.id;
+                alert('You clicked on ' + mobileId);
+            });
+        });
+</script>
+<link rel="stylesheet" href="style.css">

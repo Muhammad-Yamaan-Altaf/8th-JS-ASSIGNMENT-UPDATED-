@@ -1,0 +1,23 @@
+
+    <!-- Q.5 -->
+    <h1>Counter: <span id="counter">0</span></h1>
+    <button id="increaseButton">Increase</button>
+    <button id="decreaseButton">Decrease</button>
+
+    <script>
+        var counterValue = 0;
+var counterElement = document.getElementById("counter");
+function increaseCounter() {
+    counterValue++;
+    counterElement.textContent = counterValue;
+        }
+function decreaseCounter() {
+    counterValue--;
+    counterElement.textContent = counterValue;
+        }
+var increaseButton = document.getElementById("increaseButton");
+var decreaseButton = document.getElementById("decreaseButton");
+    increaseButton.addEventListener("click", increaseCounter);
+    decreaseButton.addEventListener("click", decreaseCounter);
+    </script>
+    <link rel="stylesheet" href="style.css">
