@@ -1,0 +1,17 @@
+
+    <!-- Q.4 -->
+    <img id="myImage" src="./pics/car1.jpeg" alt="Original Image">
+    <br><br>
+    <script>
+         var image = document.getElementById("myImage");
+   var originalSrc = image.src;
+
+   image.addEventListener("mouseover", function() {
+       image.src = "./pics/car2.jpeg"; 
+   });
+
+   image.addEventListener("mouseout", function() {
+       image.src = "./pics/car1.jpeg"; 
+   });
+    </script>
+  <link rel="stylesheet" href="style.css">
